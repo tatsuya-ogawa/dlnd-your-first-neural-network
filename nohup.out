@@ -1,0 +1,282 @@
+[I 09:11:41.323 NotebookApp] Serving notebooks from local directory: /home/tensorflow/dlnd-your-first-neural-network
+[I 09:11:41.323 NotebookApp] 0 active kernels 
+[I 09:11:41.323 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=d63eced92fb12de455da9eeceacfc8b3b980f64841b29c04
+[I 09:11:41.323 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 09:11:41.323 NotebookApp] No web browser found: could not locate runnable browser.
+[C 09:11:41.323 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=d63eced92fb12de455da9eeceacfc8b3b980f64841b29c04
+[I 09:11:52.568 NotebookApp] 302 GET /?token=d63eced92fb12de455da9eeceacfc8b3b980f64841b29c04 (127.0.0.1) 0.72ms
+[W 09:11:56.855 NotebookApp] Notebook dlnd-your-first-neural-network.ipynb is not trusted
+[I 09:12:05.695 NotebookApp] Kernel started: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[W 09:13:10.660 NotebookApp] Notebook dlnd-your-first-neural-network.ipynb is not trusted
+[W 09:14:36.450 NotebookApp] WebSocket ping timeout after 119941 ms.
+[E 09:14:38.764 NotebookApp] Uncaught exception GET /api/kernels/7a9b8de2-9b82-4366-97b2-31ddcbb84cfb/channels?session_id=C2D26C6483E8442390CF8C52B2CDFB0A (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:18888', method='GET', uri='/api/kernels/7a9b8de2-9b82-4366-97b2-31ddcbb84cfb/channels?session_id=C2D26C6483E8442390CF8C52B2CDFB0A', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cookie': '_xsrf=2|47d3b591|9b4785e8ba1e2d45352a894cf378fb45|1486306589; username-localhost-8888="2|1:0|10:1486306589|23:username-localhost-8888|44:MDEwMmRlOTI0NTA2NDU4YzliNzQyMTk1MzlhYTAzN2U=|765e3d361412c5d544c2ec6fa2e75e3547f0a4a44af83b0c2e5a2d1cc7beada5"; username-localhost-18888="2|1:0|10:1486339912|24:username-localhost-18888|44:YjY1MTM0NzBmMTE5NGM3ZGEwMzYxMGE5ODIxMDkyZTI=|3edaad383043b7a0f197d410ecaad671ad238483a2f2bdbb0479e224342e77d5"', 'Origin': 'http://localhost:18888', 'Cache-Control': 'no-cache', 'Sec-Websocket-Extensions': 'permessage-deflate; client_max_window_bits', 'Connection': 'Upgrade', 'Pragma': 'no-cache', 'Accept-Language': 'ja,en-US;q=0.8,en;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Sec-Websocket-Key': 'N8w0A7Yo8qnvW969Y6Pwmw==', 'Sec-Websocket-Version': '13', 'Host': 'localhost:18888', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36', 'Upgrade': 'websocket'})
+    Traceback (most recent call last):
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/web.py", line 1401, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "<string>", line 3, in raise_exc_info
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/stack_context.py", line 314, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/zmq/eventloop/zmqstream.py", line 184, in <lambda>
+        self.on_recv(lambda msg: callback(self, msg), copy=copy)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/notebook/services/kernels/handlers.py", line 373, in _on_zmq_reply
+        super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/notebook/base/zmqhandlers.py", line 258, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/websocket.py", line 215, in write_message
+        raise WebSocketClosedError()
+    tornado.websocket.WebSocketClosedError
+[I 09:15:08.816 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:15:20.145 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:15:20.145 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:17:20.159 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:17:20.159 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:19:20.136 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:19:20.137 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:21:20.144 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:21:20.145 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:23:20.144 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:23:20.145 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:25:20.424 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:25:20.425 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:27:20.129 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:27:20.130 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:29:20.133 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:29:20.134 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:30:18.999 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:31:20.130 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:31:20.130 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:33:20.125 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:33:20.126 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:35:20.201 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:35:20.202 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:37:20.129 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:37:20.130 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:39:20.124 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:39:20.125 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:41:20.126 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:41:20.126 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:43:20.118 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:43:20.119 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:45:20.112 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:45:20.113 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:47:20.125 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:47:20.125 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:47:58.899 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:49:20.131 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:49:20.132 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:49:26.753 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:50:10.635 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:51:20.140 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:51:20.140 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:52:09.575 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 09:53:20.116 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:53:20.116 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:55:20.156 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:55:20.157 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:57:20.122 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:57:20.123 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 09:59:20.115 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 09:59:20.116 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:01:20.188 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:01:20.188 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:03:04.136 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 10:03:20.158 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:03:20.159 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:05:20.144 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:05:20.145 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:07:20.102 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:07:20.102 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:09:20.367 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:09:20.368 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:10:18.635 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 10:11:20.129 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:11:20.130 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 10:11:58.736 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 10:13:20.088 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 10:13:20.089 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[W 10:54:20.210 NotebookApp] WebSocket ping timeout after 119976 ms.
+[W 11:09:44.462 NotebookApp] Notebook dlnd-your-first-neural-network.ipynb is not trusted
+[I 11:11:45.675 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:11:45.677 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:13:45.624 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:13:45.625 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:14:45.402 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 11:15:42.822 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 11:15:45.619 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:15:45.620 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:23:45.630 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:23:45.631 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:25:00.201 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 11:25:45.622 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:25:45.623 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:27:45.616 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:27:45.617 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:29:45.611 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:29:45.611 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:31:45.622 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:31:45.623 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:33:45.610 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:33:45.611 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:35:46.140 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:35:46.141 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:37:46.183 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:37:46.184 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:39:46.133 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:39:46.134 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:41:46.130 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:41:46.131 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:43:46.133 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:43:46.133 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:45:45.596 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:45:45.597 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[W 11:45:56.450 NotebookApp] Notebook dlnd-your-first-neural-network.ipynb is not trusted
+[I 11:46:59.044 NotebookApp] Kernel restarted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 11:47:08.283 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 11:47:57.786 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:47:57.787 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:49:57.674 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:49:57.677 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:51:57.718 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:51:57.719 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:53:57.655 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:53:57.658 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:55:57.651 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:55:57.652 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:57:57.648 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:57:57.651 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 11:59:57.650 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 11:59:57.651 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:01:57.649 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:01:57.652 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:03:57.643 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:03:57.644 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:05:58.177 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:05:58.179 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:07:57.712 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:07:57.713 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:09:57.657 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:09:57.660 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:11:57.652 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:11:57.653 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:13:57.632 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:13:57.635 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:15:57.646 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:15:57.647 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:17:58.167 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:17:58.168 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:19:58.146 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:19:58.147 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:21:57.630 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:21:57.635 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:23:57.649 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:23:57.651 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:24:07.956 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:24:23.106 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:25:57.778 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:25:57.781 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:27:57.680 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:27:57.681 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:29:57.685 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:29:57.688 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:31:57.688 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:31:57.689 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:33:57.657 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:33:57.661 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:35:57.743 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:35:57.744 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:37:57.651 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:37:57.653 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:39:57.644 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:39:57.645 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:41:57.650 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:41:57.653 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:42:51.699 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:43:42.391 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:43:57.639 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:43:57.641 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:45:57.648 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:45:57.649 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:46:15.859 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:47:57.691 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:47:57.692 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:48:19.709 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:48:43.038 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:49:04.568 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:49:32.862 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:49:57.635 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:49:57.636 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:50:06.033 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:51:46.498 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:51:54.736 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:51:57.649 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:51:57.650 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:53:51.382 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:53:57.640 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:53:57.641 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:55:57.635 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:55:57.636 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:56:19.788 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 12:57:57.621 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:57:57.622 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 12:59:57.626 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 12:59:57.627 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:00:34.486 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:00:43.463 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:01:57.621 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:01:57.623 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:03:57.622 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:03:57.623 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:04:23.837 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:05:57.621 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:05:57.622 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:07:18.112 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:07:57.616 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:07:57.617 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:09:57.615 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:09:57.617 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:11:58.085 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[W 13:11:58.086 NotebookApp] Saving untrusted notebook dlnd-your-first-neural-network.ipynb
+[I 13:13:57.863 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:14:18.549 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:15:58.794 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:16:45.486 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[W 13:18:35.041 NotebookApp] WebSocket ping timeout after 119985 ms.
+[E 13:18:35.063 NotebookApp] Uncaught exception GET /api/kernels/7a9b8de2-9b82-4366-97b2-31ddcbb84cfb/channels?session_id=B3CD8BDE7F1E487A81179EEDC21DFC8B (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:18888', method='GET', uri='/api/kernels/7a9b8de2-9b82-4366-97b2-31ddcbb84cfb/channels?session_id=B3CD8BDE7F1E487A81179EEDC21DFC8B', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cookie': '_xsrf=2|47d3b591|9b4785e8ba1e2d45352a894cf378fb45|1486306589; username-localhost-18888="2|1:0|10:1486339912|24:username-localhost-18888|44:YjY1MTM0NzBmMTE5NGM3ZGEwMzYxMGE5ODIxMDkyZTI=|3edaad383043b7a0f197d410ecaad671ad238483a2f2bdbb0479e224342e77d5"; username-localhost-8888="2|1:0|10:1486340684|23:username-localhost-8888|44:MjkwYjZjZGE3NzQ5NGU3N2E5ZmI2ZTc0NjgyZGQ5NWI=|6f8338e85607057328e05a7180cde3aa411618f24a288dfa770878d60ef65ebf"', 'Origin': 'http://localhost:18888', 'Cache-Control': 'no-cache', 'Sec-Websocket-Extensions': 'permessage-deflate; client_max_window_bits', 'Connection': 'Upgrade', 'Pragma': 'no-cache', 'Accept-Language': 'ja,en-US;q=0.8,en;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Sec-Websocket-Key': 'pJ51t88ibkT6kHI5qMxlOA==', 'Sec-Websocket-Version': '13', 'Host': 'localhost:18888', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36', 'Upgrade': 'websocket'})
+    Traceback (most recent call last):
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/web.py", line 1401, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "<string>", line 3, in raise_exc_info
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/stack_context.py", line 314, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/zmq/eventloop/zmqstream.py", line 184, in <lambda>
+        self.on_recv(lambda msg: callback(self, msg), copy=copy)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/notebook/services/kernels/handlers.py", line 373, in _on_zmq_reply
+        super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/notebook/base/zmqhandlers.py", line 258, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/home/tensorflow/.pyenv/versions/anaconda3-2.4.1/lib/python3.5/site-packages/tornado/websocket.py", line 215, in write_message
+        raise WebSocketClosedError()
+    tornado.websocket.WebSocketClosedError
+[I 13:19:22.030 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:19:38.042 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:21:21.869 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:22:37.734 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:23:22.078 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:25:21.911 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:26:05.436 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:27:21.870 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:28:18.660 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:29:21.860 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:29:48.080 NotebookApp] Kernel interrupted: 7a9b8de2-9b82-4366-97b2-31ddcbb84cfb
+[I 13:31:21.907 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:33:21.951 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:35:23.408 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:37:22.209 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:39:22.132 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
+[I 13:40:39.502 NotebookApp] Saving file at /dlnd-your-first-neural-network.ipynb
